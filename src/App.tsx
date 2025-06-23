@@ -496,12 +496,18 @@ function App() {
             our leading monitoring system. Never miss an opportunity.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{animationDelay: '0.6s'}}>
-            <button className="border border-[#00d4aa] text-[#00d4aa] px-8 py-3 rounded-lg font-semibold hover:bg-[#00d4aa] hover:text-black transition-all duration-300 transform hover:scale-105 animate-glow">
+            <button 
+              onClick={openAuth}
+              className="border border-[#00d4aa] text-[#00d4aa] px-8 py-3 rounded-lg font-semibold hover:bg-[#00d4aa] hover:text-black transition-all duration-300 transform hover:scale-105 animate-glow"
+            >
               Start Free Trial
             </button>
-            <button className="bg-[#00d4aa] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#00b894] transition-all duration-300 transform hover:scale-105 animate-pulse-glow">
+            <a 
+              href="#pricing"
+              className="bg-[#00d4aa] text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#00b894] transition-all duration-300 transform hover:scale-105 animate-pulse-glow text-center"
+            >
               View Pricing
-            </button>
+            </a>
           </div>
           <p className="text-sm text-gray-500 mt-6 animate-fade-in" style={{animationDelay: '0.9s'}}>
             Trusted by <span className="text-[#00d4aa] font-bold animate-pulse">10,000+</span> resellers worldwide
